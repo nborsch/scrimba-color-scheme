@@ -1,0 +1,70 @@
+:root {
+    --font: "Inter", sans-serif;
+    --grey: #D1D5DB
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #374151;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: var(--font);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 550px;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+input {
+    width: 40px;
+    border: none;
+    padding: 0;
+}
+
+select,
+button {
+    border: 2px solid var(--grey);
+    border-radius: 3px;
+    color: #111827;
+    font-family: var(--font);
+    font-size: 14px;
+}
+
+button {
+    background-color: white;
+    cursor: pointer;
+}
+
+#scheme-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 46px;
+    
+    height: 100%;
+}
+
+#scheme-container span {
+    justify-self: center;
+    align-self: center;
+    font-size: 12px;
+    font-weight: bold;
+}
